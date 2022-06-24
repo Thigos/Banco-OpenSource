@@ -11,7 +11,7 @@ import Modules.Conta;
 
 public class Test {
 	float JUROS = 0.5f;
-	float CDI = 16.0655f;
+	float CDI = 12.65f;
 	
 	private Cliente poupanca(Cliente cliente) {
 		int anoDeposito = cliente.getDataCriacao().get(Calendar.YEAR);
@@ -101,7 +101,7 @@ public class Test {
 		
 		assertTrue(poupanca(cliente).saldo() == cliente.saldo());
 		
-		System.out.println("Previsão: "+ previsao(1000f, 0f, dataCriacao, Calendar.getInstance()));
+		System.out.println("Previsão: "+ previsao(1000f, 100f, dataCriacao, Calendar.getInstance()));
 		
 		int saque = 200;
 		assertFalse(saque > conta.getSaldo());
