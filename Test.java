@@ -54,9 +54,6 @@ public class Test {
 			
 			jurosTotal = juros+jurosTotal;
 			
-			/*System.out.print("Juros " + juros);
-			System.out.println(" Valor Real: " + valorReal);*/
-			
 		}
 		
 		
