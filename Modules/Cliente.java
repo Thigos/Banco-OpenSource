@@ -25,7 +25,7 @@ public class Cliente {
 	}
 	
 	public void saque(double valor) {
-		conta.setSaldo(valor);
+		conta.setSaldo(saldo()-valor);
 	}
 	
 	public void deposito(double valor) {
